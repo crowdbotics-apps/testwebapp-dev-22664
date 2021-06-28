@@ -52,3 +52,7 @@ class CustomText(models.Model):
         on_delete=models.CASCADE,
         related_name="customtext_subpage",
     )
+    description = models.TextField(
+        null=True,
+        blank=True,
+    )
