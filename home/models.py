@@ -26,6 +26,7 @@ class CustomText(models.Model):
     "Generated Model"
     title = models.CharField(
         max_length=150,
+        blank=True,
     )
     name = models.BinaryField(
         null=True,
@@ -52,7 +53,7 @@ class CustomText(models.Model):
         on_delete=models.CASCADE,
         related_name="customtext_subpage",
     )
-    description = models.TextField(
+    descriptiontest = models.TextField(
         null=True,
         blank=True,
     )
