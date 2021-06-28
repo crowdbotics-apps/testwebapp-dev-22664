@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_customtext_description'),
+        ("home", "0003_customtext_description"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='customtext',
-            old_name='description',
-            new_name='descriptiontest',
+            model_name="customtext",
+            old_name="description",
+            new_name="descriptiontest",
         ),
         migrations.AlterField(
-            model_name='customtext',
-            name='title',
+            model_name="customtext",
+            name="title",
             field=models.CharField(blank=True, max_length=150),
         ),
     ]

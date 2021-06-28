@@ -24,9 +24,9 @@ class HomePage(models.Model):
 
 class CustomText(models.Model):
     "Generated Model"
-    title = models.CharField(
-        max_length=150,
+    titleTest = models.CharField(
         blank=True,
+        max_length=150,
     )
     name = models.BinaryField(
         null=True,
